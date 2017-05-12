@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addons>
+<addon id="plugin.service.obd2kodi" name="My Test Add-on" version="0.0.1" provider-name="Me">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0" />
+		<import addon="script.module.nanscrapers" version="0.5.5" />
+        <import addon="script.module.python.koding.aio" version="0.0.1"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Quick one liner about the add-on</summary>
+		<description lang="en">Full add-on description.</description>
+		<platform>all</platform>
+		<forum>http://www.noobsandnerds.com/support</forum>
+		<website>www.noobsandnerds.com</website>
+		<news></news>
+		<genre></genre>
+		<video_guide></video_guide>
+		<video_preview></video_preview>
+	</extension>
+</addon>
+
+<addon id="repository.codehammerKodiAddons" name="Codehammers Kodi Addons" version="0.0.1" provider-name="Alexander Schneider">
+	<extension point="xbmc.addon.repository" name="OBD2 Kodi">
+		<dir>
+			<info compressed="false">https://offshoregit.com/tvaresolvers/tva-common-repository/raw/master/addons.xml</info>
+			<checksum>https://offshoregit.com/tvaresolvers/tva-common-repository/raw/master/addons.xml.md5</checksum>
+			<datadir zip="true">https://offshoregit.com/tvaresolvers/tva-common-repository/raw/master/zips/</datadir>
+		</dir>
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/noobsandnerds/modules4all/master/zips/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/noobsandnerds/modules4all/master/zips/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/noobsandnerds/modules4all/master/zips/</datadir>
+		</dir>
+		<info compressed="false">https://raw.githubusercontent.com/codehammer2050/repository.codehammerKodiAddons/master/zips/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/codehammer2050/repository.codehammerKodiAddons/master/zips/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/codehammer2050/repository.codehammerKodiAddons/master/zips/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Addons for Kodi</summary>
+		<description lang="en">Addons for Kodi</description>
+		<genre>other,german</genre>
+	</extension>
+</addon>
+</addons>
