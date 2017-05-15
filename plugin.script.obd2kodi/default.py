@@ -23,4 +23,4 @@ def get_resolution():
 
 
 
-xbmcgui.Dialog().ok(addonname, line1, line2, status,get_resolution())
+xbmcgui.Dialog().ok(addonname, line1, status,get_resolution())
