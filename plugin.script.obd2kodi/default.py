@@ -20,7 +20,7 @@ def get_resolution():
         return win.getWidth() + 'x' + win.getHeight()
     except TypeError:
         return '1920x1080'
-
-
+print(status)
+print(get_resolution())
 
 xbmcgui.Dialog().ok(addonname, line1, status,get_resolution())
