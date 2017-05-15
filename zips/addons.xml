@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
-<addon id="plugin.script.obd2kodi" name="Test Script" version="0.0.2" provider-name="Me">
+<addon id="plugin.script.obd2kodi" name="Test Script" version="0.0.3" provider-name="Me">
 	<requires>
 		<import addon="xbmc.python" version="2.14.0"/>
 	</requires>
