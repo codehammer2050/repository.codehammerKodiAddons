@@ -13,6 +13,14 @@ addonname = addon.getAddonInfo('name')
 
 line1 = "Hello World!"
 line2 = "We can write anything we want here"
-line3 = status.tostring()
 
-xbmcgui.Dialog().ok(addonname, line1, line2, line3)
+def get_resolution():
+    try:
+        win = xbmcgui.Window()
+        return win.getWidth() + 'x' + win.getHeight()
+    except TypeError:
+        return '1920x1080'
+
+
+
+xbmcgui.Dialog().ok(addonname, line1, line2, status,get_resolution())
